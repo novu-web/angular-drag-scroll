@@ -78,7 +78,7 @@
 
                         clearSelection();
 
-                        e.preventDefault();
+                        // e.preventDefault();
                         e.stopPropagation();
                     }
 
@@ -127,7 +127,7 @@
                             }
                         }
 
-                        e.preventDefault();
+                        // e.preventDefault();
                     }
                 }
 
