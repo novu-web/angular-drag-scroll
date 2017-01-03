@@ -64,6 +64,14 @@
                             }
                         }
 
+                        var excludedElements = ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'ul', 'li', 'input'];
+                        for (var i= 0; i<excludedElements.length; i++) {
+                            if (angular.element(e.target).is(excludedElements[i])) {
+                                console.debug('excluded element');
+                                return;
+                            }
+                        }
+                        
                         $scope.$apply(function() {
                             onDragStart($scope);
                         });
